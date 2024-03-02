@@ -1,0 +1,15 @@
+{
+  "name": "angulartutorial",
+  "version": "1.0.0",
+  "description": "Version Check node -v",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

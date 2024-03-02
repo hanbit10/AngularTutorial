@@ -22,6 +22,18 @@ let results = numList.filter((num) => num > 2);
 let res = numList.find((num) => num === 2);
 let res_string = empList.find((emp) => emp === "is");
 let sum = numList.reduce((acc, num) => acc + num);
-let c = 2 /* Blue */;
+let c = 2 /* Color.Blue */;
+let newNum = numList[5];
+//tuples
+let swapNumbs = [2];
+function swapNumbers(num1, num2) {
+    return [num2, num1];
+}
+swapNumbs = swapNumbers(10, 20);
+swapNumbs[0];
+swapNumbs[1];
+let department;
+department = "IT";
+department = 10;
 console.log(c, "\n");
 // console.log(res_string);

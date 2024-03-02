@@ -55,10 +55,6 @@ let department: any;
 department = "IT";
 department = 10;
 
-function add(num1: number, num2: number) : any {
-  return num1 + num2;
-}
-
 
 console.log(c, "\n");
 // console.log(res_string);

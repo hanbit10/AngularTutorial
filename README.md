@@ -11,3 +11,4 @@ tsc --init
 
 How to compile TypeScript
 tsc
+node [filename]

@@ -74,3 +74,4 @@ class Manager extends Employee {
     }
 }
 console.log(hanbit.getNameWithAddress());
+//# sourceMappingURL=class.js.map

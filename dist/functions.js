@@ -23,3 +23,14 @@ let concatString = getItems(["a", "b", "c", "d", "e"]);
 console.log(add2(2, 3, ...[4, 5, 6]));
 console.log(add3(1, 2, 3));
 console.log(concatString);
+var ColorHair;
+(function (ColorHair) {
+    ColorHair[ColorHair["Red"] = 0] = "Red";
+    ColorHair[ColorHair["Brown"] = 1] = "Brown";
+    ColorHair[ColorHair["White"] = 2] = "White";
+    ColorHair[ColorHair["Blond"] = 3] = "Blond";
+    ColorHair[ColorHair["Black"] = 4] = "Black";
+})(ColorHair || (ColorHair = {}));
+let getHairColor = ColorHair.Red;
+console.log(getHairColor);
+//# sourceMappingURL=functions.js.map

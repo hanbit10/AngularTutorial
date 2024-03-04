@@ -26,3 +26,9 @@ let [...users] = [
 ];
 let result = users.filter(user => user.id > 2);
 console.log(result);
+// @Component({
+// class Component {
+//   constructor(public name:string)
+// }
+// })
+//# sourceMappingURL=interface.js.map

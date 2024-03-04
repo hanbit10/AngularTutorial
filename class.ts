@@ -1,10 +1,25 @@
-class Employee {
+import { Login, User } from "./interface";
+// import * as UserLogin from './interface'
+
+interface Address {
+  street: string;
+  city: string;
+  state: string;
+  pin: string;
+}
+class Employee implements Login {
   //private
   #id: number;
 
   //protected
   protected name: string;
-  address: string;
+  // address: {
+  //   street: string;
+  //   city: string;
+  //   state: string;
+  //   pin: string;
+  // };
+  address: Address;
 
   get empId(): number {
     return this.#id;
@@ -18,14 +33,18 @@ class Employee {
     return 50;
   }
 
-  constructor(id: number, name:string, address:string) {
+  constructor(id: number, name:string, address:Address) {
     this.address = address
     this.#id = id
     this.name = name;
   }
 
+  login(): User {
+    return{name: "Hanbit", id: 1, email: "chanbit@gmail.com"}
+  }
+
   getNameWithAddress() :string {
-    return `${this.name} stays at ${this.address}`
+    return `${this.name} stays at ${this.address.street}`
   }
 }
 
@@ -39,7 +58,11 @@ let data: any[] = [
   {
     id:2,
     name: "Hanbit",
-    address: "Alexianer 40"
+    address: {
+      street:"Alexianer 40", 
+      city: "Aachen", 
+      state:"Germany",
+    }
   }
 ] 
 
@@ -67,11 +90,9 @@ john.empId = 100
 console.log(john.empId)
 
 class Manager extends Employee {
-  constructor(id: number, name: string, address: string){
+  constructor(id: number, name: string, address: Address){
     super(id, name, address);
   }
 }
 
-let mike = new Manager(2, "Mike", "Cherise Drive");
-
-console.log(mike.getNameWithAddress());
+console.log(hanbit.getNameWithAddress());

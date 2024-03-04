@@ -28,3 +28,15 @@ let concatString = getItems<string>(["a", "b", "c", "d", "e"])
 console.log(add2(2,3,...[4,5,6]))
 console.log(add3(1,2,3))
 console.log(concatString)
+
+enum ColorHair {
+  Red,
+  Brown,
+  White,
+  Blond,
+  Black,
+}
+
+let getHairColor: ColorHair = ColorHair.Red
+
+console.log(getHairColor)
